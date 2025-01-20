@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Units</title>
+</head>
+<style>
+  .box-px{
+    width: 200px;
+    height: 100px;
+    border: 2px solid blue;
+  }
+  .parent-percent{
+    width: 400px;
+    height: 400px;
+    border: 2px solid yellow;
+  }
+  .childpercent{
+    width: 50%;
+    background-color: black;
+    border: 2px solid;
+    height:50%;
+
+  }
+  html{
+    font-size: 30px;
+  }
+.rem-paragraph{
+  font-size: 1.5rem;
+}
+.parent-em{
+  font-size: 16px;
+}
+.child-em{
+  font-size: 2em;
+}
+.container{
+  width: 50vw;
+  border: 2px solid palevioletred;
+}
+.box-vh{
+height: 25vh;
+border: 2px solid orchid;
+}
+.square-vmin{
+  width: 20vmin;
+  height: 20vmin;
+  background-color: cadetblue;
+  font-size: 0.5em;
+}
+.square-vmax{
+  width: 20vmax;
+  height: 20vmax;
+  background-color: burlywood;
+}
+.parent-relative{
+  width: 40vw;
+  height: 45vh;
+  background-color: chocolate;
+  position: relative;
+}
+.child-absolute{
+  position: absolute;
+  border: 2px solid;
+  bottom: 0;
+  right: 0;
+}
+.parent-font{
+  font-size: 20px;
+}
+.child-font{
+  font-size: inherit;
+}
+</style>
+<body>
+  <h4>TASK - 1</h4>
+  <div class="box-px">
+    Width,Height are set in pixel
+
+  </div>
+  <h4>TASK - 2</h4>
+  <div class="parent-percent">
+    <div class="childpercent">
+
+    </div>
+  </div>
+  <h4>TASK - 3</h4>
+  <p class = "rem-paragraph">This paragraph uses rem units</p>
+  <h4>TASK - 4</h4>
+  <div class="parent-em">
+    <p class="child-em">
+      This paragraph uses em units
+    </p>
+    
+  </div>
+  <h4>TASK - 5</h4>
+  <div class="container">
+Box with vw units
+  </div>
+  <h4>TASK - 6</h4>
+  <div class="box-vh">
+    This is a box with vh units
+  </div>
+  <h4>TASK - 7</h4>
+  <div class="square-vmin">
+    square with vmin units
+  </div>
+  <h4>TASK - 8</h4>
+  <div class="square-vmax">
+    square with vmax units
+  </div>
+  <h4>TASK - 9</h4>
+  <div class="parent-relative">
+    <div class="child-absolute">
+      Child box
+    </div>
+  </div>
+  <h4>TASK - 10</h4>
+  <div class="parent-font">
+    Parent text
+    <div class="child-font">
+      child text
+    </div>
+  </div>
+
+</body>
+</html>
